@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet"
+        type='text/css'>
+</head>
+
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="icon.jpg" width="100"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="service.html"> Services</a>
+            <a href="blog.html"> Blogs</a>
+            <a href="contact.html"> Contact</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="service" style="padding-top: 150px;">
+        <h2>OUR SERVICES!</h2>
+        <div class="service_container" style="padding-bottom: 50px;">
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="scalability.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>Scalability</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="pricing and payment.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>Pricing & Payment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="seo friendliness.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>Seo Friendliness</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="service_container">
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="use and test store functionality.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>Store Functionality</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="user friendly.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>User Friendly</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="customer service.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>Customer Service</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, corrupti!</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feed">
+        <h2>Write a Review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" , name="Name" , placeholder="Name"><br>
+                <input type="email" , name="Email" , placeholder="Email"><br>
+                <input type="number" , name="Number" , placeholder="Contact Number"><br>
+                <textarea name="Review" cols="6" rows="5" , placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="icon.jpg" width="100"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html"> Services</a>|
+            <a href="blog.html"> Blogs</a>|
+            <a href="contact.html"> Contact</a>|
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" target="_black"><i class="fa-brands fa-square-facebook"></i>
+            </a>|
+            <a href="https://www.instagram.com/" target="_black"><i class="fa-brands fa-square-instagram"></i></a>|
+            <a href="https://twitter.com/" target="_black"><i class="fa-brands fa-square-twitter"></i></a>|
+            <a href="https://www.linkedin.com/home" target="_black"><i class="fa-brands fa-linkedin"></i></a>|
+        </div>
+
+        <hr>
+        <p><b>Copyright &copy; 2023 E Commerce. All rights reserved. Designed and Developed by Lavanya Kunder.</b></p>
+    </footer>
+
+
+    <script type="text/javascript">
+        const form = document.forms['submit-googlesheet']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXQEyujGev0vdOr5hb0HGYPeIt91vsD0Q6EvRBOH4OohAiXxdMR0Vw3nJh-jDgH0Cs/exec'
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    alert('Thank you for your review...Hope you had a great shopping experience with us!', response)
+                    submitButton.disabled = false
+                })
+                .catch(error => {
+                    alert('Error!', error.message)
+                }
+                )
+        })
+    </script>
+</body>
+
+</html>
